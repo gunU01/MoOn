@@ -1,9 +1,12 @@
 const Card = ({ title, description, imageUrl, alt }) => {
     return (
         <div className="cardContainer">
-            <img src={imageUrl} alt={alt} />
-            <span className="titleText">{title}</span>
-            <span className="desText">{description}</span>
+            <img className="cardImage" src={imageUrl} alt={alt} />
+            <span className="titleText">
+                {title}
+                <span className="desText">{description}</span>
+            </span>
+            
         </div>
     )
 }

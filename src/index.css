@@ -1,0 +1,21 @@
+.cardImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    position: relative;
+}
+
+.titleText {
+    font-size : 1.5rem;
+    padding : 5px 10px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.desText {
+    position: absolute;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+}
