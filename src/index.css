@@ -1,21 +1,46 @@
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cardContainer {
+    border: 1px solid #343434;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #bcbcbc;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cardImageWrapper {
+    flex-shrink: 0;
+}
+
 .cardImage {
     width: 100px;
     height: 100px;
-    object-fit: cover;
     border-radius: 8px;
-    position: relative;
+    object-fit: cover;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0;
 }
 
 .titleText {
-    font-size : 1.5rem;
-    padding : 5px 10px;
-    position: absolute;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .desText {
-    position: absolute;
-    display: flex;
     font-size: 1rem;
     font-weight: 400;
+    color: #555;
 }
